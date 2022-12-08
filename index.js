@@ -28,7 +28,7 @@ const airDropSol = async () => {
     const fromAirDropSignature = await connection.requestAirdrop(publicKey, 2 * LAMPORTS_PER_SOL)
     await connection.confirmTransaction(fromAirDropSignature)
   } catch (err) {
-    console.error(err)
+    console.log(err)
   }
 }
 
